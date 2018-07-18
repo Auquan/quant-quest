@@ -31,10 +31,7 @@ class MyTradingFunctions():
     def __init__(self):  #Put any global variables here
         self.lookback = 1200  ## max number of historical datapoints you want at any given time
         self.targetVariable = 'Y'
-        if datetime.today() < datetime(2018, 7, 3):
-            self.dataSetId = 'QQ3DataSample'
-        else:
-            self.dataSetId = 'QQ3DataDownSampled'
+        self.dataSetId = ''
         self.params = {}
 
         # for example you can import and store an ML model from scikit learn in this dict
